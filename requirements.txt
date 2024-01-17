@@ -1,2 +1,3 @@
 #requirements.txt
+urllib3
 snowflake-connector-python
