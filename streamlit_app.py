@@ -51,7 +51,7 @@ except URLError as e:
   streamlit.error()
 except Exception as e:
   streamlit.text("Error Message stage1")
-  streamlit.text(e.message)
+  streamlit.text(e)
   streamlit.text("Error Message stage2")
   streamlit.error()
   
