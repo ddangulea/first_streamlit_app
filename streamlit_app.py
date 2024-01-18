@@ -39,7 +39,7 @@ try:
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
   else:
-    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit2/" + fruit_choice)
     streamlit.write('The user entered ', fruit_choice)
     
     # write your own comment -what does the next line do? 
