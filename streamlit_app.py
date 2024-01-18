@@ -48,10 +48,9 @@ try:
     streamlit.dataframe(fruityvice_normalized)
     streamlit.text(fruityvice_response.json())
 except URLError as e:
-  streamlit.error()
   streamlit.text(e.message)
-
-
+  streamlit.error()
+  
 streamlit.stop()
 # import snowflake.connector
 
