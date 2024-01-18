@@ -20,7 +20,7 @@ def get_fruit_load_list(this_my_cnx):
 
 def insert_row_snowflake(my_cnx, new_fruit):
   with my_cnx.cursor() as my_cur:
-    my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
+    my_cur.execute(f"insert into pc_rivery_db.public.fruit_load_list values ('{new_fruit}')")
     return "Thanks for adding " + new_fruit
   
 
