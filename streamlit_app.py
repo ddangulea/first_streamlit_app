@@ -64,7 +64,7 @@ except Exception as e:
   streamlit.text("Error Message stage2")
   streamlit.error()
   
-streamlit.stop()
+# streamlit.stop()
 # import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
