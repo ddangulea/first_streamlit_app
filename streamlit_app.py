@@ -53,7 +53,7 @@ except Exception as e:
   streamlit.text("Error Message stage1")
   streamlit.text(e)
   streamlit.text("Error Message stage2")
-  streamlit.error()
+  # streamlit.error()
   
 streamlit.stop()
 # import snowflake.connector
