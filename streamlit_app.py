@@ -48,6 +48,8 @@ try:
     streamlit.dataframe(fruityvice_normalized)
     streamlit.text(fruityvice_response.json())
 except URLError as e:
+  streamlit.error()
+except Exception as e:
   streamlit.text("Error Message stage1")
   streamlit.text(e.message)
   streamlit.text("Error Message stage2")
